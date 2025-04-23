@@ -44,7 +44,7 @@ uninstall:
 
 pkg: all
 	@cp dwm dist/usr/bin
-	@cd dist && sudo makepkg -l y -c y ../dwm-5.8-x86_64.txz
+	@cd dist && sudo makepkg -l y -c y ../dwm-5.8-x86_64.txz > /dev/null
 
 pkg_install: pkg
 	@installpkg dwm-5.8*
